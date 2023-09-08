@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "leetcodedaily"
+version = "0.1.0"
+description = ""
+authors = ["dinmukhammed <arystambekdimash005@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^3.0.0"
+sqlalchemy = "^2.0.20"
+alembic = "^1.12.0"
+bs4 = "^0.0.1"
+requests = "^2.31.0"
+leetcode-cli = "^0.1.0"
+selenium = "^4.12.0"
+lxml = "^4.9.3"
+aioschedule = "^0.5.2"
+apscheduler = "^3.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

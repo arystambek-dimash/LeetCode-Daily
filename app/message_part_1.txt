@@ -1,0 +1,13 @@
+
+    /start - ботты бастау үшін
+
+    /profile - озіңіздін leetcode профилі алу үшін
+
+    /leetcode - пішім: /leetcode <username> leetcode профилі алу үшін
+
+    /delete_profile - профиль ошыру үшін
+
+    /tc - бyгiнгі челлендж
+
+    /top100 - leetcode топ100 сұрақтар алу үшін
+    

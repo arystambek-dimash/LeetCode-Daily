@@ -31,7 +31,6 @@ async def main():
 
     scheduler.add_job(scheduled_job, trigger='interval', hours=24, kwargs={'bot': bot})
     scheduler.start()
-    await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot, allowed_updates=dp.resolve_used_update_types())
 
 

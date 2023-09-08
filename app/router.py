@@ -200,8 +200,8 @@ async def get_top_100(msg: Message, db: Session = get_db()):
     await msg.answer("Куте турыныз деректер алынуда")
     users = ""
     for i in repository.get_top_100_user(db):
-        users += f"{i[0]}     {i[1]}\n"
+        users += f"{i[0]}        {i[1]}        {i[2]}\n"
 
     await msg.answer("Топ 100 рейтингы жогары колданушы\n\n"
-                     + "Username     Leetcode-Rating\n" +
+                     + "Username         Leetcode        Leetcode-Rating\n" +
                      users)

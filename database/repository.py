@@ -94,6 +94,5 @@ class Repository:
     @staticmethod
     def get_top_100_user(db: Session):
         top_users = db.query(User).join(User.leetcode).order_by(LeetCode.rating.desc()).limit(100).all()
-        user_ratings = [(user.username, user.leetcode[0].rating) for user in top_users]
-        print(user_ratings)
+        user_ratings = [(user.username, user.leetcode[0].username, user.leetcode[0].rating) for user in top_users]
         return user_ratings
